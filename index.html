@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              whit: "#ECECEC",
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        whit: "#ECECEC",
+                    },
+                },
             },
-          },
-        },
-      };
+        };
     </script>
     <script src="https://unpkg.com/flowbite@1.4.4/dist/flowbite.js"></script>
     <style type="text/tailwindcss">
-        
-      @layer utilities {
+
+        @layer utilities {
         .content-auto {
           content-visibility: auto;
         }
@@ -59,109 +60,64 @@
     </style>
     <style>
         @font-face {
-  font-family: "bgilroy";
-  src: url(assets/Gilroy-ExtraBold.otf) format("otf");
-  font-weight: normal;
-  font-style: normal;
-}
+            font-family: "bgilroy";
+            src: url(assets/Gilroy-ExtraBold.otf) format("otf");
+            font-weight: normal;
+            font-style: normal;
+        }
     </style>
     <script src="https://kit.fontawesome.com/454c257758.js" crossorigin="anonymous"></script>
-  </head>
+</head>
 
-  <body>
-    <nav
-      class="bg-whit dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
-    >
-      <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-      >
-        <a
-          href="https://flowbite.com/"
-          class="flex items-center space-x-3 rtl:space-x-reverse"
-        >
-          <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            class="h-8"
-            alt="Realm Education"
-          />
-          <span
-            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-whit"
-            >Realm Education</span
-          >
-        </a>
-        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <button
-            type="button"
-            class="text-whit bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            Sign In
-          </button>
-          <button
-            data-collapse-toggle="navbar-sticky"
-            type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="navbar-sticky"
-            aria-expanded="false"
-          >
-            <span class="sr-only">Open main menu</span>
-            <svg
-              class="w-5 h-5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 17 14"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M1 1h15M1 7h15M1 13h15"
-              />
-            </svg>
-          </button>
+<body>
+    <nav class="bg-whit dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Realm Education" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-whit">Realm Education</span>
+            </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                <button type="button"
+                    class="text-whit bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Sign In
+                </button>
+                <button data-collapse-toggle="navbar-sticky" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-sticky" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul
+                    class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-whit dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-whit bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#Courses"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-whit dark:hover:bg-gray-700 dark:hover:text-whit md:dark:hover:bg-transparent dark:border-gray-700">Courses</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-whit dark:hover:bg-gray-700 dark:hover:text-whit md:dark:hover:bg-transparent dark:border-gray-700">Testimonials</a>
+                    </li>
+                    <li>
+                        <a href="#About"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-whit dark:hover:bg-gray-700 dark:hover:text-whit md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div
-          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-          id="navbar-sticky"
-        >
-          <ul
-            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-whit dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
-          >
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-3 text-whit bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
-                aria-current="page"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-whit dark:hover:bg-gray-700 dark:hover:text-whit md:dark:hover:bg-transparent dark:border-gray-700"
-                >Courses</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-whit dark:hover:bg-gray-700 dark:hover:text-whit md:dark:hover:bg-transparent dark:border-gray-700"
-                >Testimonials</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-whit dark:hover:bg-gray-700 dark:hover:text-whit md:dark:hover:bg-transparent dark:border-gray-700"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
     </nav>
-    <section id="hero" class="mt-10   padding-l padding pt-5 bg-whit min-h-screen padding flex justify-center align-center" >
+    <section id="hero"
+        class="mt-10   padding-l padding pt-5 bg-whit min-h-screen padding flex justify-center align-center">
         <div class=" w-full flex gap-60     ">
             <div>
                 <h1 class="text-8xl  " style="font-family: bgilroy;">
@@ -171,37 +127,40 @@
                 <h3 class="text-2xl 
                 ">
                     LEARN WHAT MATTERS THE MOST
-                </h3>   
+                </h3>
             </div>
             <div>
-                <img src="assets/aa.webp" alt="" class="rounded-xl align-center mt-4" height="200px" >
+                <img src="assets/aa.webp" alt="" class="rounded-xl align-center mt-4" height="200px">
             </div>
-                
+
         </div>
-        
-        
+
+
     </section>
 
-    <section id="hero" class="  padding-l padding pt-5 bg-whit min-h-screen padding justify-center align-center">
+    <section id="Courses" class="  padding-l padding pt-5 bg-whit min-h-screen padding justify-center align-center">
         <h1 class="text-8xl mb-6 " style="font-family: bgilroy;">Courses</h1>
         <br>
 
         <div class=" w-full flex gap-10" style="font-family: bgilroy;">
-            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div
+                class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <a href="#">
-                    <img class="rounded-t-lg " src="assets/download.png" alt="" style="width: 100%;"/>
+                    <img class="rounded-t-lg " src="assets/download.png" alt="" style="width: 100%;" />
                 </a>
                 <div class="p-5">
                     <a href="#">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">DSA IN C/C++</h5>
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">DSA IN C/C++
+                        </h5>
                     </a>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                        technology
                         acquisitions of 2021 so far, in reverse chronological order.</p>
                     <a href="#"
                         class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                         Read more
-                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                            fill="none" viewBox="0 0 14 10">
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M1 5h12m0 0L9 1m4 4L9 9" />
                         </svg>
@@ -209,42 +168,113 @@
                 </div>
 
             </div>
-<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="#">
-        <img class="rounded-t-lg " src="assets/download.jpeg" alt="" style="width: 100%;" />
-    </a>
-    <div class="p-5">
-        <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Python
-                V3</h5>
-        </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
-            acquisitions of 2021 so far, in reverse chronological order.</p>
-        <a href="#"
-            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            Read more
-            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9" />
-            </svg>
-        </a>
-    </div>
-    
-           
-    
-        </div>
-    
-    
+            <div
+                class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                    <img class="rounded-t-lg " src="assets/download.jpeg" alt="" style="width: 100%;" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Python
+                            V3</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                        technology
+                        acquisitions of 2021 so far, in reverse chronological order.</p>
+                    <a href="#"
+                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Read more
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                    </a>
+                </div>
+
+
+
+
+
+
     </section>
-    <section class="  padding-l padding pt-5 bg-whit  padding justify-center align-center">
+    <section class="padding-l padding pt-5 bg-whit min-h-screen padding justify-center align-center">
+        <h2 class="text-5xl font-bold mb-10" style="font-family: bgilroy;">Student Testimonials</h2>
+    
+        <!-- Testimonial Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Testimonial Card 1 -->
+            <div class="bg-white p-6 rounded-md shadow-md">
+                <p class="text-gray-600 mb-4">
+                    "I absolutely love the courses on this website. The content is rich,
+                    and the instructors are incredibly knowledgeable."
+                </p>
+                <p class="text-blue-500 font-bold">- John Doe</p>
+            </div>
+    
+            <!-- Testimonial Card 2 -->
+            <div class="bg-white p-6 rounded-md shadow-md">
+                <p class="text-gray-600 mb-4">
+                    "The interactive learning experience here has made studying
+                    enjoyable. I've gained valuable skills that are relevant to my
+                    career."
+                </p>
+                <p class="text-blue-500 font-bold">- Jane Smith</p>
+            </div>
+    
+            <!-- Testimonial Card 3 -->
+            <div class="bg-white p-6 rounded-md shadow-md">
+                <p class="text-gray-600 mb-4">
+                    "I appreciate the flexibility of the courses. It allows me to learn
+                    at my own pace and fits well with my schedule."
+                </p>
+                <p class="text-blue-500 font-bold">- Alex Johnson</p>
+            </div>
+            <!-- Testimonial Card 3 -->
+            <div class="bg-white p-6 rounded-md shadow-md">
+                <p class="text-gray-600 mb-4">
+                    "I appreciate the flexibility of the courses. It allows me to learn
+                    at my own pace and fits well with my schedule."
+                </p>
+                <p class="text-blue-500 font-bold">- Alex Johnson</p>
+            </div>
+            <!-- Testimonial Card 3 -->
+            <div class="bg-white p-6 rounded-md shadow-md">
+                <p class="text-gray-600 mb-4">
+                    "I appreciate the flexibility of the courses. It allows me to learn
+                    at my own pace and fits well with my schedule."
+                </p>
+                <p class="text-blue-500 font-bold">- Alex Johnson</p>
+            </div>
+            <!-- Testimonial Card 3 -->
+            <div class="bg-white p-6 rounded-md shadow-md">
+                <p class="text-gray-600 mb-4">
+                    "I appreciate the flexibility of the courses. It allows me to learn
+                    at my own pace and fits well with my schedule."
+                </p>
+                <p class="text-blue-500 font-bold">- Alex Johnson</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="About" class="  padding-l padding pt-5 bg-whit  padding justify-center align-center">
         <div class="text-center tex-3xl" style="font-family: gilroy;">
             ©️REAL REALM EDUCATION
         </div>
+        <br>
+        <div class="flex justify-center gap-5">
+            <div><i class="fa-brands fa-facebook"></i></div>
+            <div><i class="fa-brands fa-x-twitter"></i></div>
+            <div>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
     </section>
+
     <!-- ====== Navbar Section Start -->
 
-   
-<!-- ====== Hero Section End -->
-  </body>
+
+    <!-- ====== Hero Section End -->
+</body>
+
 </html>
